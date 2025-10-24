@@ -1,0 +1,15 @@
+mode,object,winner,avg_ops_per_sec,advantage_vs_second
+Balanced Set/Get,CustomerProfile,Jedis (no cache),101914,1040
+Balanced Set/Get,InventorySnapshot,Jedis (no cache),53340,6344
+Balanced Set/Get,LargeString,Redisson client cache,99803,21640
+Balanced Set/Get,LargeTextDocument,Redisson client cache,91628,15081
+Balanced Set/Get,MetricsBatch,Redisson client cache,83169,5431
+Balanced Set/Get,OrderAggregate,Jedis (no cache),77146,11500
+Balanced Set/Get,PlainTextMessage,Redisson client cache,97152,1066
+Read-Mostly,CustomerProfile,Redisson client cache,160573,30560
+Read-Mostly,InventorySnapshot,Jedis (no cache),43996,109
+Read-Mostly,LargeString,Jedis client cache,93333,15230
+Read-Mostly,LargeTextDocument,Jedis client cache,83960,7095
+Read-Mostly,MetricsBatch,Redisson client cache,154302,36258
+Read-Mostly,OrderAggregate,Redisson client cache,103941,17659
+Read-Mostly,PlainTextMessage,Jedis client cache,113903,11614

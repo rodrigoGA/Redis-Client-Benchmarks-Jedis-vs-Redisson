@@ -1,0 +1,85 @@
+Redis Benchmark Report
+Generated: 2025-10-24 03:43:19
+
+Winners per workload:
+  Balanced Set/Get - CustomerProfile: Jedis (no cache) (100835 ops/s, p95=0.23 ms)
+  Balanced Set/Get - InventorySnapshot: Jedis (no cache) (60503 ops/s, p95=0.31 ms)
+  Balanced Set/Get - LargeString: Redisson client cache (88846 ops/s, p95=0.14 ms)
+  Balanced Set/Get - LargeTextDocument: Jedis (no cache) (74220 ops/s, p95=0.27 ms)
+  Balanced Set/Get - MetricsBatch: Redisson client cache (81428 ops/s, p95=0.14 ms)
+  Balanced Set/Get - OrderAggregate: Jedis (no cache) (75010 ops/s, p95=0.21 ms)
+  Balanced Set/Get - PlainTextMessage: Jedis (no cache) (92625 ops/s, p95=0.18 ms)
+  Read-Mostly - CustomerProfile: Redisson client cache (160768 ops/s, p95=0.00 ms)
+  Read-Mostly - InventorySnapshot: Jedis (no cache) (44305 ops/s, p95=0.15 ms)
+  Read-Mostly - LargeString: Jedis client cache (92955 ops/s, p95=0.09 ms)
+  Read-Mostly - LargeTextDocument: Jedis client cache (81540 ops/s, p95=0.13 ms)
+  Read-Mostly - MetricsBatch: Redisson client cache (152337 ops/s, p95=0.00 ms)
+  Read-Mostly - OrderAggregate: Redisson client cache (96294 ops/s, p95=0.09 ms)
+  Read-Mostly - PlainTextMessage: Jedis client cache (114771 ops/s, p95=0.13 ms)
+
+Set/Get diagnostics:
+  Set/Get | Scenario=Jedis (no cache) | Object=CustomerProfile | Throughput=100835 ops/s | Avg=0.01 ms | p95=0.23 ms | p99=0.28 ms
+  Set/Get | Scenario=Jedis client cache | Object=CustomerProfile | Throughput=84801 ops/s | Avg=0.01 ms | p95=0.22 ms | p99=0.25 ms
+  Set/Get | Scenario=Redisson SerializationCodec | Object=CustomerProfile | Throughput=84116 ops/s | Avg=0.01 ms | p95=0.22 ms | p99=0.25 ms
+  Set/Get | Scenario=Redisson client cache | Object=CustomerProfile | Throughput=92133 ops/s | Avg=0.01 ms | p95=0.18 ms | p99=0.21 ms
+  Set/Get | Scenario=Jedis (no cache) | Object=OrderAggregate | Throughput=75010 ops/s | Avg=0.01 ms | p95=0.21 ms | p99=0.24 ms
+  Set/Get | Scenario=Jedis client cache | Object=OrderAggregate | Throughput=63606 ops/s | Avg=0.02 ms | p95=0.29 ms | p99=0.33 ms
+  Set/Get | Scenario=Redisson SerializationCodec | Object=OrderAggregate | Throughput=60953 ops/s | Avg=0.02 ms | p95=0.31 ms | p99=0.35 ms
+  Set/Get | Scenario=Redisson client cache | Object=OrderAggregate | Throughput=59988 ops/s | Avg=0.02 ms | p95=0.21 ms | p99=0.24 ms
+  Set/Get | Scenario=Jedis (no cache) | Object=InventorySnapshot | Throughput=60503 ops/s | Avg=0.02 ms | p95=0.31 ms | p99=0.36 ms
+  Set/Get | Scenario=Jedis client cache | Object=InventorySnapshot | Throughput=45326 ops/s | Avg=0.02 ms | p95=0.34 ms | p99=0.41 ms
+  Set/Get | Scenario=Redisson SerializationCodec | Object=InventorySnapshot | Throughput=28192 ops/s | Avg=0.04 ms | p95=0.44 ms | p99=0.52 ms
+  Set/Get | Scenario=Redisson client cache | Object=InventorySnapshot | Throughput=25810 ops/s | Avg=0.04 ms | p95=0.68 ms | p99=0.82 ms
+  Set/Get | Scenario=Jedis (no cache) | Object=PlainTextMessage | Throughput=92625 ops/s | Avg=0.01 ms | p95=0.18 ms | p99=0.22 ms
+  Set/Get | Scenario=Jedis client cache | Object=PlainTextMessage | Throughput=79819 ops/s | Avg=0.01 ms | p95=0.22 ms | p99=0.25 ms
+  Set/Get | Scenario=Redisson SerializationCodec | Object=PlainTextMessage | Throughput=85640 ops/s | Avg=0.01 ms | p95=0.23 ms | p99=0.27 ms
+  Set/Get | Scenario=Redisson client cache | Object=PlainTextMessage | Throughput=82657 ops/s | Avg=0.01 ms | p95=0.22 ms | p99=0.25 ms
+  Set/Get | Scenario=Jedis (no cache) | Object=LargeTextDocument | Throughput=74220 ops/s | Avg=0.01 ms | p95=0.27 ms | p99=0.30 ms
+  Set/Get | Scenario=Jedis client cache | Object=LargeTextDocument | Throughput=66035 ops/s | Avg=0.02 ms | p95=0.26 ms | p99=0.30 ms
+  Set/Get | Scenario=Redisson SerializationCodec | Object=LargeTextDocument | Throughput=67745 ops/s | Avg=0.01 ms | p95=0.28 ms | p99=0.31 ms
+  Set/Get | Scenario=Redisson client cache | Object=LargeTextDocument | Throughput=74205 ops/s | Avg=0.01 ms | p95=0.24 ms | p99=0.26 ms
+  Set/Get | Scenario=Jedis (no cache) | Object=MetricsBatch | Throughput=78648 ops/s | Avg=0.01 ms | p95=0.30 ms | p99=0.37 ms
+  Set/Get | Scenario=Jedis client cache | Object=MetricsBatch | Throughput=68947 ops/s | Avg=0.01 ms | p95=0.23 ms | p99=0.26 ms
+  Set/Get | Scenario=Redisson SerializationCodec | Object=MetricsBatch | Throughput=69230 ops/s | Avg=0.01 ms | p95=0.26 ms | p99=0.29 ms
+  Set/Get | Scenario=Redisson client cache | Object=MetricsBatch | Throughput=81428 ops/s | Avg=0.01 ms | p95=0.14 ms | p99=0.15 ms
+  Set/Get | Scenario=Jedis (no cache) | Object=LargeString | Throughput=76715 ops/s | Avg=0.01 ms | p95=0.26 ms | p99=0.29 ms
+  Set/Get | Scenario=Jedis client cache | Object=LargeString | Throughput=71860 ops/s | Avg=0.01 ms | p95=0.20 ms | p99=0.24 ms
+  Set/Get | Scenario=Redisson SerializationCodec | Object=LargeString | Throughput=72305 ops/s | Avg=0.01 ms | p95=0.26 ms | p99=0.28 ms
+  Set/Get | Scenario=Redisson client cache | Object=LargeString | Throughput=88846 ops/s | Avg=0.01 ms | p95=0.14 ms | p99=0.17 ms
+
+Read-Mostly diagnostics:
+  ReadMostly | Scenario=Jedis (no cache) | Object=CustomerProfile | Writers=2 | Readers=6 | Throughput=106872 ops/s | FinalVersion=20001 | Observed=20001 | Consistency=OK
+  ReadMostly | Scenario=Jedis client cache | Object=CustomerProfile | Writers=2 | Readers=6 | Throughput=113892 ops/s | FinalVersion=20001 | Observed=20001 | Consistency=OK
+  ReadMostly | Scenario=Redisson SerializationCodec | Object=CustomerProfile | Writers=2 | Readers=6 | Throughput=85707 ops/s | FinalVersion=20001 | Observed=20001 | Consistency=OK
+  ReadMostly | Scenario=Redisson client cache | Object=CustomerProfile | Writers=2 | Readers=6 | Throughput=160768 ops/s | FinalVersion=20001 | Observed=1253 | Consistency=FAILED
+  ReadMostly | Scenario=Jedis (no cache) | Object=OrderAggregate | Writers=2 | Readers=6 | Throughput=77743 ops/s | FinalVersion=20001 | Observed=20001 | Consistency=OK
+  ReadMostly | Scenario=Jedis client cache | Object=OrderAggregate | Writers=2 | Readers=6 | Throughput=84050 ops/s | FinalVersion=20001 | Observed=20001 | Consistency=OK
+  ReadMostly | Scenario=Redisson SerializationCodec | Object=OrderAggregate | Writers=2 | Readers=6 | Throughput=66101 ops/s | FinalVersion=20001 | Observed=20001 | Consistency=OK
+  ReadMostly | Scenario=Redisson client cache | Object=OrderAggregate | Writers=2 | Readers=6 | Throughput=96294 ops/s | FinalVersion=20001 | Observed=20001 | Consistency=OK
+  ReadMostly | Scenario=Jedis (no cache) | Object=InventorySnapshot | Writers=2 | Readers=6 | Throughput=44305 ops/s | FinalVersion=20001 | Observed=20001 | Consistency=OK
+  ReadMostly | Scenario=Jedis client cache | Object=InventorySnapshot | Writers=2 | Readers=6 | Throughput=41295 ops/s | FinalVersion=20001 | Observed=20001 | Consistency=OK
+  ReadMostly | Scenario=Redisson SerializationCodec | Object=InventorySnapshot | Writers=2 | Readers=6 | Throughput=34907 ops/s | FinalVersion=20001 | Observed=20001 | Consistency=OK
+  ReadMostly | Scenario=Redisson client cache | Object=InventorySnapshot | Writers=2 | Readers=6 | Throughput=42914 ops/s | FinalVersion=20001 | Observed=20001 | Consistency=OK
+  ReadMostly | Scenario=Jedis (no cache) | Object=PlainTextMessage | Writers=2 | Readers=6 | Throughput=100816 ops/s | FinalVersion=20001 | Observed=20001 | Consistency=OK
+  ReadMostly | Scenario=Jedis client cache | Object=PlainTextMessage | Writers=2 | Readers=6 | Throughput=114771 ops/s | FinalVersion=20001 | Observed=20001 | Consistency=OK
+  ReadMostly | Scenario=Redisson SerializationCodec | Object=PlainTextMessage | Writers=2 | Readers=6 | Throughput=82380 ops/s | FinalVersion=20001 | Observed=20001 | Consistency=OK
+  ReadMostly | Scenario=Redisson client cache | Object=PlainTextMessage | Writers=2 | Readers=6 | Throughput=88958 ops/s | FinalVersion=20001 | Observed=1037 | Consistency=FAILED
+  ReadMostly | Scenario=Jedis (no cache) | Object=LargeTextDocument | Writers=2 | Readers=6 | Throughput=69074 ops/s | FinalVersion=20001 | Observed=20001 | Consistency=OK
+  ReadMostly | Scenario=Jedis client cache | Object=LargeTextDocument | Writers=2 | Readers=6 | Throughput=81540 ops/s | FinalVersion=20001 | Observed=20001 | Consistency=OK
+  ReadMostly | Scenario=Redisson SerializationCodec | Object=LargeTextDocument | Writers=2 | Readers=6 | Throughput=58247 ops/s | FinalVersion=20001 | Observed=20001 | Consistency=OK
+  ReadMostly | Scenario=Redisson client cache | Object=LargeTextDocument | Writers=2 | Readers=6 | Throughput=75116 ops/s | FinalVersion=20001 | Observed=595 | Consistency=FAILED
+  ReadMostly | Scenario=Jedis (no cache) | Object=MetricsBatch | Writers=2 | Readers=6 | Throughput=78528 ops/s | FinalVersion=20001 | Observed=20001 | Consistency=OK
+  ReadMostly | Scenario=Jedis client cache | Object=MetricsBatch | Writers=2 | Readers=6 | Throughput=116162 ops/s | FinalVersion=20001 | Observed=20001 | Consistency=OK
+  ReadMostly | Scenario=Redisson SerializationCodec | Object=MetricsBatch | Writers=2 | Readers=6 | Throughput=67615 ops/s | FinalVersion=20001 | Observed=20001 | Consistency=OK
+  ReadMostly | Scenario=Redisson client cache | Object=MetricsBatch | Writers=2 | Readers=6 | Throughput=152337 ops/s | FinalVersion=20001 | Observed=20001 | Consistency=OK
+  ReadMostly | Scenario=Jedis (no cache) | Object=LargeString | Writers=2 | Readers=6 | Throughput=70814 ops/s | FinalVersion=20001 | Observed=20001 | Consistency=OK
+  ReadMostly | Scenario=Jedis client cache | Object=LargeString | Writers=2 | Readers=6 | Throughput=92955 ops/s | FinalVersion=20001 | Observed=20001 | Consistency=OK
+  ReadMostly | Scenario=Redisson SerializationCodec | Object=LargeString | Writers=2 | Readers=6 | Throughput=59743 ops/s | FinalVersion=20001 | Observed=20001 | Consistency=OK
+  ReadMostly | Scenario=Redisson client cache | Object=LargeString | Writers=2 | Readers=6 | Throughput=68300 ops/s | FinalVersion=20001 | Observed=20001 | Consistency=OK
+
+Inconsistencies:
+  Inconsistency detected: ReadMostly | Scenario=Redisson client cache | Object=CustomerProfile | Writers=2 | Readers=6 | Throughput=160768 ops/s | FinalVersion=20001 | Observed=1253 | Consistency=FAILED
+  Inconsistency detected: ReadMostly | Scenario=Redisson client cache | Object=PlainTextMessage | Writers=2 | Readers=6 | Throughput=88958 ops/s | FinalVersion=20001 | Observed=1037 | Consistency=FAILED
+  Inconsistency detected: ReadMostly | Scenario=Redisson client cache | Object=LargeTextDocument | Writers=2 | Readers=6 | Throughput=75116 ops/s | FinalVersion=20001 | Observed=595 | Consistency=FAILED
+
+Client-side cache invalidation probe: OK

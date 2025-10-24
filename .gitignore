@@ -1,0 +1,13 @@
+# Build artifacts
+/target/
+/.idea/
+/.vscode/
+
+# Maven cache unpacked by run.sh (if present)
+/apache-maven-3.9.6/
+
+# Benchmark outputs
+#/benchmark-results/
+
+# Docker leftovers
+/docker-temp/

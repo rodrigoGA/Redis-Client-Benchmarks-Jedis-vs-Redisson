@@ -1,0 +1,57 @@
+mode,scenario,object,operations,seconds,ops_per_sec,average_ms,p50_ms,p95_ms,p99_ms,writer_threads,reader_threads,final_version,max_observed_version,consistent
+Balanced Set/Get,Jedis (no cache),CustomerProfile,160000,1.586753,100835,0.01,0.16,0.23,0.28,,,,,
+Read-Mostly,Jedis (no cache),CustomerProfile,80000,0.748556,106872,0.01,0.06,0.08,0.09,2,6,20001,20001,true
+Balanced Set/Get,Jedis client cache,CustomerProfile,160000,1.886767,84801,0.01,0.16,0.22,0.25,,,,,
+Read-Mostly,Jedis client cache,CustomerProfile,80000,0.702418,113892,0.01,0.06,0.12,0.15,2,6,20001,20001,true
+Balanced Set/Get,Redisson SerializationCodec,CustomerProfile,160000,1.902128,84116,0.01,0.17,0.22,0.25,,,,,
+Read-Mostly,Redisson SerializationCodec,CustomerProfile,80000,0.933414,85707,0.01,0.07,0.11,0.14,2,6,20001,20001,true
+Balanced Set/Get,Redisson client cache,CustomerProfile,160000,1.736624,92133,0.01,0.10,0.18,0.21,,,,,
+Read-Mostly,Redisson client cache,CustomerProfile,80000,0.497612,160768,0.01,0.00,0.00,0.00,2,6,20001,1253,false
+Balanced Set/Get,Jedis (no cache),OrderAggregate,160000,2.133050,75010,0.01,0.15,0.21,0.24,,,,,
+Read-Mostly,Jedis (no cache),OrderAggregate,80000,1.029032,77743,0.01,0.07,0.10,0.12,2,6,20001,20001,true
+Balanced Set/Get,Jedis client cache,OrderAggregate,160000,2.515499,63606,0.02,0.20,0.29,0.33,,,,,
+Read-Mostly,Jedis client cache,OrderAggregate,80000,0.951813,84050,0.01,0.07,0.12,0.15,2,6,20001,20001,true
+Balanced Set/Get,Redisson SerializationCodec,OrderAggregate,160000,2.624955,60953,0.02,0.23,0.31,0.35,,,,,
+Read-Mostly,Redisson SerializationCodec,OrderAggregate,80000,1.210262,66101,0.02,0.09,0.12,0.14,2,6,20001,20001,true
+Balanced Set/Get,Redisson client cache,OrderAggregate,160000,2.667193,59988,0.02,0.18,0.21,0.24,,,,,
+Read-Mostly,Redisson client cache,OrderAggregate,80000,0.830787,96294,0.01,0.00,0.09,0.12,2,6,20001,20001,true
+Balanced Set/Get,Jedis (no cache),InventorySnapshot,160000,2.644510,60503,0.02,0.22,0.31,0.36,,,,,
+Read-Mostly,Jedis (no cache),InventorySnapshot,80000,1.805656,44305,0.02,0.10,0.15,0.18,2,6,20001,20001,true
+Balanced Set/Get,Jedis client cache,InventorySnapshot,160000,3.529997,45326,0.02,0.22,0.34,0.41,,,,,
+Read-Mostly,Jedis client cache,InventorySnapshot,80000,1.937273,41295,0.02,0.10,0.19,0.23,2,6,20001,20001,true
+Balanced Set/Get,Redisson SerializationCodec,InventorySnapshot,160000,5.675330,28192,0.04,0.32,0.44,0.52,,,,,
+Read-Mostly,Redisson SerializationCodec,InventorySnapshot,80000,2.291824,34907,0.03,0.17,0.23,0.27,2,6,20001,20001,true
+Balanced Set/Get,Redisson client cache,InventorySnapshot,160000,6.199069,25810,0.04,0.44,0.68,0.82,,,,,
+Read-Mostly,Redisson client cache,InventorySnapshot,80000,1.864196,42914,0.02,0.00,0.00,0.10,2,6,20001,20001,true
+Balanced Set/Get,Jedis (no cache),PlainTextMessage,160000,1.727403,92625,0.01,0.14,0.18,0.22,,,,,
+Read-Mostly,Jedis (no cache),PlainTextMessage,80000,0.793523,100816,0.01,0.07,0.10,0.12,2,6,20001,20001,true
+Balanced Set/Get,Jedis client cache,PlainTextMessage,160000,2.004524,79819,0.01,0.17,0.22,0.25,,,,,
+Read-Mostly,Jedis client cache,PlainTextMessage,80000,0.697039,114771,0.01,0.03,0.13,0.16,2,6,20001,20001,true
+Balanced Set/Get,Redisson SerializationCodec,PlainTextMessage,160000,1.868277,85640,0.01,0.17,0.23,0.27,,,,,
+Read-Mostly,Redisson SerializationCodec,PlainTextMessage,80000,0.971107,82380,0.01,0.08,0.13,0.16,2,6,20001,20001,true
+Balanced Set/Get,Redisson client cache,PlainTextMessage,160000,1.935719,82657,0.01,0.12,0.22,0.25,,,,,
+Read-Mostly,Redisson client cache,PlainTextMessage,80000,0.899296,88958,0.01,0.00,0.00,0.00,2,6,20001,1037,false
+Balanced Set/Get,Jedis (no cache),LargeTextDocument,160000,2.155766,74220,0.01,0.21,0.27,0.30,,,,,
+Read-Mostly,Jedis (no cache),LargeTextDocument,80000,1.158175,69074,0.01,0.11,0.15,0.16,2,6,20001,20001,true
+Balanced Set/Get,Jedis client cache,LargeTextDocument,160000,2.422973,66035,0.02,0.15,0.26,0.30,,,,,
+Read-Mostly,Jedis client cache,LargeTextDocument,80000,0.981109,81540,0.01,0.07,0.13,0.16,2,6,20001,20001,true
+Balanced Set/Get,Redisson SerializationCodec,LargeTextDocument,160000,2.361787,67745,0.01,0.23,0.28,0.31,,,,,
+Read-Mostly,Redisson SerializationCodec,LargeTextDocument,80000,1.373462,58247,0.02,0.10,0.16,0.17,2,6,20001,20001,true
+Balanced Set/Get,Redisson client cache,LargeTextDocument,160000,2.156189,74205,0.01,0.16,0.24,0.26,,,,,
+Read-Mostly,Redisson client cache,LargeTextDocument,80000,1.065016,75116,0.01,0.00,0.00,0.00,2,6,20001,595,false
+Balanced Set/Get,Jedis (no cache),MetricsBatch,160000,2.034369,78648,0.01,0.20,0.30,0.37,,,,,
+Read-Mostly,Jedis (no cache),MetricsBatch,80000,1.018751,78528,0.01,0.07,0.11,0.12,2,6,20001,20001,true
+Balanced Set/Get,Jedis client cache,MetricsBatch,160000,2.320611,68947,0.01,0.16,0.23,0.26,,,,,
+Read-Mostly,Jedis client cache,MetricsBatch,80000,0.688695,116162,0.01,0.02,0.10,0.13,2,6,20001,20001,true
+Balanced Set/Get,Redisson SerializationCodec,MetricsBatch,160000,2.311130,69230,0.01,0.21,0.26,0.29,,,,,
+Read-Mostly,Redisson SerializationCodec,MetricsBatch,80000,1.183172,67615,0.01,0.09,0.16,0.17,2,6,20001,20001,true
+Balanced Set/Get,Redisson client cache,MetricsBatch,160000,1.964925,81428,0.01,0.11,0.14,0.15,,,,,
+Read-Mostly,Redisson client cache,MetricsBatch,80000,0.525152,152337,0.01,0.00,0.00,0.07,2,6,20001,20001,true
+Balanced Set/Get,Jedis (no cache),LargeString,160000,2.085632,76715,0.01,0.21,0.26,0.29,,,,,
+Read-Mostly,Jedis (no cache),LargeString,80000,1.129722,70814,0.01,0.09,0.12,0.13,2,6,20001,20001,true
+Balanced Set/Get,Jedis client cache,LargeString,160000,2.226547,71860,0.01,0.14,0.20,0.24,,,,,
+Read-Mostly,Jedis client cache,LargeString,80000,0.860631,92955,0.01,0.02,0.09,0.11,2,6,20001,20001,true
+Balanced Set/Get,Redisson SerializationCodec,LargeString,160000,2.212852,72305,0.01,0.20,0.26,0.28,,,,,
+Read-Mostly,Redisson SerializationCodec,LargeString,80000,1.339066,59743,0.02,0.11,0.15,0.17,2,6,20001,20001,true
+Balanced Set/Get,Redisson client cache,LargeString,160000,1.800863,88846,0.01,0.11,0.14,0.17,,,,,
+Read-Mostly,Redisson client cache,LargeString,80000,1.171306,68300,0.01,0.00,0.00,0.05,2,6,20001,20001,true
