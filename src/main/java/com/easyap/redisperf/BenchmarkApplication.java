@@ -69,13 +69,13 @@ public class BenchmarkApplication {
                         () -> new JedisCacheAdapter(clientFactory.createCachedJedis(LOCAL_CACHE_MAX_SIZE))
                 ),
                 new BenchmarkScenario(
-                        "Redisson SerializationCodec",
-                        "Redisson RBucket with SerializationCodec (RESP3) and no local cache.",
+                        "Redisson (no cache)",
+                        "Redisson using Java SerializationCodec (same payload format as Jedis) without local cache.",
                         () -> new RedissonCacheAdapter(clientFactory.createRedisson())
                 ),
                 new BenchmarkScenario(
                         "Redisson client cache",
-                        "Redisson RClientSideCaching (native RESP3 tracking) with a 20k-entry local cache.",
+                        "Redisson client-side caching (RESP3 tracking + SerializationCodec) with a 20k-entry local cache.",
                         () -> new RedissonClientSideCacheAdapter(clientFactory.createRedisson(), LOCAL_CACHE_MAX_SIZE)
                 )
         );

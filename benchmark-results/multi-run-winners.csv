@@ -1,15 +1,15 @@
 mode,object,winner,avg_ops_per_sec,advantage_vs_second
-Balanced Set/Get,CustomerProfile,Jedis (no cache),101914,1040
-Balanced Set/Get,InventorySnapshot,Jedis (no cache),53340,6344
-Balanced Set/Get,LargeString,Redisson client cache,99803,21640
-Balanced Set/Get,LargeTextDocument,Redisson client cache,91628,15081
-Balanced Set/Get,MetricsBatch,Redisson client cache,83169,5431
-Balanced Set/Get,OrderAggregate,Jedis (no cache),77146,11500
-Balanced Set/Get,PlainTextMessage,Redisson client cache,97152,1066
-Read-Mostly,CustomerProfile,Redisson client cache,160573,30560
-Read-Mostly,InventorySnapshot,Jedis (no cache),43996,109
-Read-Mostly,LargeString,Jedis client cache,93333,15230
-Read-Mostly,LargeTextDocument,Jedis client cache,83960,7095
-Read-Mostly,MetricsBatch,Redisson client cache,154302,36258
-Read-Mostly,OrderAggregate,Redisson client cache,103941,17659
-Read-Mostly,PlainTextMessage,Jedis client cache,113903,11614
+Balanced Set/Get,CustomerProfile,Jedis (no cache),104360,15434
+Balanced Set/Get,InventorySnapshot,Jedis (no cache),55685,5672
+Balanced Set/Get,LargeString,Redisson client cache,99105,16604
+Balanced Set/Get,LargeTextDocument,Redisson client cache,84906,6698
+Balanced Set/Get,MetricsBatch,Redisson client cache,89197,9920
+Balanced Set/Get,OrderAggregate,Jedis (no cache),77683,13420
+Balanced Set/Get,PlainTextMessage,Jedis (no cache),99737,13388
+Read-Mostly,CustomerProfile,Redisson client cache,152296,36086
+Read-Mostly,InventorySnapshot,Redisson client cache,45063,568
+Read-Mostly,LargeString,Jedis client cache,91583,21722
+Read-Mostly,LargeTextDocument,Jedis client cache,84922,15620
+Read-Mostly,MetricsBatch,Redisson client cache,145540,20408
+Read-Mostly,OrderAggregate,Redisson client cache,89620,4200
+Read-Mostly,PlainTextMessage,Redisson client cache,120264,13889
